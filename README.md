@@ -8,7 +8,7 @@ Install via [composer](https://getcomposer.org):
 ```javascript
 {
     "require": {
-        "gilbitron/hoard": "~0.1"
+        "gilbitron/hoard": "~0.1.0"
     }
 }
 ```
