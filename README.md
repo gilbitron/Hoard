@@ -32,7 +32,7 @@ Possible drawers (more to come):
 
 * `file`
 
-`$options` is an array of options passed to the chosen drawer.
+`$options` is an array of options passed to the chosen drawer. See [Drawers](#drawers) section below.
 
 `$args`:
 * `encrypt_keys` - Use encrypted keys (default: `true`)
