@@ -1,4 +1,6 @@
 # Hoard
+[![Build Status](https://travis-ci.org/gilbitron/Hoard.svg?branch=master)](https://travis-ci.org/gilbitron/Hoard)
+
 Hoard is a simple, extensible PHP caching library.
 
 ## Install
