@@ -38,44 +38,54 @@ Possible drawers (more to come):
 * `encrypt_keys` - Use encrypted keys (default: `true`)
 * `encryption_function` - Function to use for encrypting keys `md5`/`sha1` (default: `md5`)
 
+Determine if an item exists in the cache
 ```php
 $cache->has($key);
 ```
 
+Retrieve an item from the cache by key
 ```php
 $cache->get($key, $default = null);
 ```
 
+Retrieve an item from the cache and delete it
 ```php
 $cache->pull($key, $default = null);
 ```
 
+Store an item in the cache
 ```php
 $cache->put($key, $value, $minutes);
 ```
 
+Store an item in the cache if the key does not exist
 ```php
 $cache->add($key, $value, $minutes);
 ```
 
+Store an item in the cache indefinitely
 ```php
 $cache->forever($key, $value);
 ```
 
+Remove an item from the cache
 ```php
 $cache->forget($key);
 ```
 
+Remove all items from the cache
 ```php
 $cache->flush();
 ```
 
 ## Drawers
 
-### `file`
-Basic FileSystem caching. Options:
+#### `file`
+Basic FileSystem caching. 
 
-* `cache_dir` - Path to cache dir. Uses the system tmp dir if none provided.
+Options:
+
+* `cache_dir` - Path to cache directory. Uses the system tmp dir if none provided.
 
 ## Credits
 
