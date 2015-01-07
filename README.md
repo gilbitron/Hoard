@@ -38,40 +38,49 @@ Possible drawers (more to come):
 * `encrypt_keys` - Use encrypted keys (default: `true`)
 * `encryption_function` - Function to use for encrypting keys `md5`/`sha1` (default: `md5`)
 
+---
+
 Determine if an item exists in the cache
 ```php
 $cache->has($key);
 ```
+---
 
 Retrieve an item from the cache by key
 ```php
 $cache->get($key, $default = null);
 ```
+---
 
 Retrieve an item from the cache and delete it
 ```php
 $cache->pull($key, $default = null);
 ```
+---
 
-Store an item in the cache
+Store an item in the cache. `$minutes` can be an int or DateTime
 ```php
 $cache->put($key, $value, $minutes);
 ```
+---
 
-Store an item in the cache if the key does not exist
+Store an item in the cache if the key does not exist. `$minutes` can be an int or DateTime
 ```php
 $cache->add($key, $value, $minutes);
 ```
+---
 
 Store an item in the cache indefinitely
 ```php
 $cache->forever($key, $value);
 ```
+---
 
 Remove an item from the cache
 ```php
 $cache->forget($key);
 ```
+---
 
 Remove all items from the cache
 ```php
